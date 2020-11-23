@@ -33,25 +33,25 @@ export class AnalogClockComponent implements OnInit {
     this.hourDegree = this.offset + ((hour % 12) * 30) + (this.minuteDegree / 60);
   }
 
-  /**
-   * onHourChanged
-   */
-  public onHourChanged(hour: number) {
-    this.logic.setHour(hour);
-  }
+  // /**
+  //  * onHourChanged
+  //  */
+  // public onHourChanged(hour: number) {
+  //   this.logic.setHour(hour);
+  // }
 
-  /**
-   * onMinuteChanged
-   */
-  public onMinuteChanged(minute: number) {
-    this.logic.setMinute(minute);
-  }
+  // /**
+  //  * onMinuteChanged
+  //  */
+  // public onMinuteChanged(minute: number) {
+  //   this.logic.setMinute(minute);
+  // }
 
-  /**
-   * onSecondChanged
-   */
-  public onSecondChanged(second: number) {
-    this.logic.setSecond(second);
-  }
+  // /**
+  //  * onSecondChanged
+  //  */
+  // public onSecondChanged(second: number) {
+  //   this.logic.setSecond(second);
+  // }
 
 }

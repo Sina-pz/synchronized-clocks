@@ -32,7 +32,7 @@ export class ClockCoreService implements IClockCore {
       this.setSecond(newSecond);
       this.setHour(newHour);
       this.setMinute(newMinute);
-    }, 1000); // set it every one seconds}
+    }, 1000); // set it every one seconds
   }
 
   public get second$(): Observable<number> {
@@ -50,8 +50,8 @@ export class ClockCoreService implements IClockCore {
     this.setSecond(currentTime.getSeconds());
     this.setHour(currentTime.getHours());
     this.setMinute(currentTime.getMinutes());
-
   }
+
   setSecond(second: number) {
     this.secondSubject.next((second < 0 ? second + 60 : second) % 60);
   }
